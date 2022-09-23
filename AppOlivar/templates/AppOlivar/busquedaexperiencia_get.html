@@ -1,5 +1,5 @@
 {% extends 'index.html' %}
-{%block Title %} Experiencias {%endblock%}
+{%block Title %}Busqueda Experiencia {%endblock%}
 {%block contenido%}          
           <!-- Page Content-->
             <section class="py-5">
@@ -9,60 +9,22 @@
                             <div class="text-center mb-5">
                                 <h1 class="fw-bolder">Experiencias </h1>
                                 <p class="lead fw-normal text-muted mb-0">
-                                    <br>
-
-                                                                        
                                     <form action="/AppOlivar/busquedaexperiencia_get" method="GET">
-                                        <table>
                                         {% csrf_token %}
-                                        <th>
+                                       
                                         {{ formexperiencias.as_p }}
-                                        </th>
-                                        <th>                                       
-                                            &nbsp; <input type="submit" value="Buscar">
-                                        </th>
-                                    </table>
+                                                                                  
+                                       <input type="submit" value="Buscar">
                                        </form>    
-                
-                                 
-                                  <br>
-                                    <table class="default">
-                                        {% for exper in verexperiencia %}
-                                        <tr>
-                                      
-                                          <th>Nombre de la empresa</th>
-                                      
-                                          <th>Fecha Inicio</th>
-                                      
-                                          <th>Fecha de Culminacion</th>
-
-                                          <th>Descripcion</th>
-                                      
-                                    
-                                        </tr>
-                                      
-                                        <tr>
-                                        
-                                          <td>{{ exper.nombre }}</td>
-                                          <td>{{ exper.fechainicio }}</td>
-                                          <td>{{ exper.fechafin }}</td>
-                                          <td>{{ exper.descripcion }}</td>
-                                          {% endfor %}
-                                        </tr>
-                                      
-  
-                                      </table>
-
+     
 
                                 </p>
                             </div>
                         </div>
                     </div>
 
-
+                    
                     <div class="row gx-5">
-
-
                         <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/1300x700/343a40/6c757d" alt="..." /></div>
                         <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
                         <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>

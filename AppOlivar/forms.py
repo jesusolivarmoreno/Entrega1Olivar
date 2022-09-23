@@ -1,5 +1,6 @@
 from django import forms
 
+#Formulario para Crear 
 class CrearProyecto(forms.Form):
     nombre=forms.CharField(max_length=40)
     localizacion= forms.CharField(max_length=40)
@@ -16,3 +17,12 @@ class CrearCursos(forms.Form):
     institucion=forms.CharField(max_length=40)
     fechainicio= forms.DateField()
     fechafin= forms.DateField()
+    
+#FIN DE FORMULARIO CREAR
+
+#Formularios de Busqueda
+
+class Busquedaexperienciaform(forms.Form):
+    nombre=forms.CharField(max_length=40,label="Nombre de la empresa ")
+
+#FIN DE FORMULARIO BUSQUEDA

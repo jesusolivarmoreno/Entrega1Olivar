@@ -17,9 +17,9 @@ Including another URLconf
 
 from django.urls import path
 from AppOlivar import views
-from AppOlivar.views import About , Contact , Pricing , Faq , PortFolioItem , formulario_proyecto , formulario_experiencia , formulario_cursos
+from AppOlivar.views import Busquedaexperiencia_get, Inicio, About , Contact , Pricing , Faq , PortFolioItem , formulario_proyecto , formulario_experiencia , formulario_cursos
 urlpatterns = [
-    path('', views.Inicio, name="AppInicio"),
+    path('', Inicio, name="AppInicio"),
     path('about', About, name="AppOlivarAbout"),
     path('contact', Contact, name="AppOlivarContact"),
     path('pricing', Pricing, name="AppOlivarPricing"),
@@ -28,4 +28,6 @@ urlpatterns = [
     path('blogpost', formulario_experiencia, name="AppOlivarBlogPost"),
     path('portfoliooverview', formulario_cursos, name="AppOlivarPortFolioOverview"),
     path('portfolioitem', PortFolioItem, name="AppOlivarPortFolioItem"),
+    #path('busquedaexperiencia', Busquedaexperiencia, name="AppOlivarBusquedaExperiencia"),
+    path('busquedaexperiencia_get', Busquedaexperiencia_get, name="AppOlivarBusquedaExperienciaget"),
 ]

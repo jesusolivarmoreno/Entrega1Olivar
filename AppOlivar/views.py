@@ -89,8 +89,34 @@ def PortFolioItem(request):
     vistaexperiencia = Experiencia.objects.all()
 
     contexto ={
+        "formexperiencias" : Busquedaexperienciaform(),
         "verexperiencia": vistaexperiencia  
     }
     
     return render(request,"AppOlivar/portfolio-item.html",contexto)
 # FIN de vista experiencia
+
+#Busqueda Experiencias
+def Busquedaexperiencia_get(request):
+    nombre = request.GET.get('nombre')
+    experiencias = Experiencia.objects.filter(nombre__icontains=nombre)
+    contexto = {
+        "formexperiencias" : Busquedaexperienciaform(),
+        "verexperiencia" : experiencias 
+    }
+    return render(request, "AppOlivar/portfolio-item.html",contexto)
+
+#FIN BUSQUEDA EXPERIENCIA
+
+
+
+
+# ESTA ES LA ORIGINAL 
+#def Busquedaexperiencia(request):    
+#    contexto = {
+#        "formexperiencias" : Busquedaexperienciaform() 
+#    }
+#    return render(request, "AppOlivar/busquedaexperiencia.html",contexto)
+#ESTA ES EL FIN DE LA ORIGINAL
+
+#FIN BUSQUEDA EXPERIENCIA
