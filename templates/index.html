@@ -50,7 +50,7 @@
                                 </ul>
                             </li>
                             {% if user.is_authenticated %}
-                            <li class="nav-item"><a class="nav-link" href="{% url 'AppLoginEditarUsuario' %}">Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'AppLoginEditarUsuario'%}">Profile</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'AppLoginAvatar' %}">Avatar</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'AppLoginLogout' %}">Logout</a></li>
                             {% else %}

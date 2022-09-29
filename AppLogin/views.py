@@ -82,7 +82,7 @@ def register_custom(request):
 #############################################
 
 #Edicion de Profile Usuario Django
-
+from django import *
 @login_required
 def editar_usuario(request):
     usuario= request.user
@@ -133,6 +133,10 @@ def upload_avatar(request):
         "form": AvatarForm()
     }
     return render(request,"AppLogin/avatar.html", contexto)
-    
-              
+
+################
+##################
+#####################
+
+             
             

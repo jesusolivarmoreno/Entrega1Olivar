@@ -8,4 +8,7 @@ class Avatar(models.Model):
     def __str__(self):
         return f"Foto : {self.imagen}, Usuario : {self.user}, Email : {self.user.email}, Nombre : {self.user.first_name}"
         return super().__str__()
-    
+
+##################
+#################
+##############

@@ -26,3 +26,7 @@ class AvatarForm(forms.ModelForm):
     class Meta:
         model = Avatar
         fields = "__all__"
+        
+###### EDITAR PERFIL CON TUTORIAL YOUTUBE PORQUE EL DE LA CLASE NO FUNCIONO
+###################
+##################
