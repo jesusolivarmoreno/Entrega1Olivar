@@ -22,6 +22,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
                     {% if user.is_authenticated %}
+                    <img height="80px" src="{{ user.avatar.imagen.url }}" alt="">
                     <a class="navbar-brand"> Bienvenido {{ user.get_username }}</a>
                     {% endif %}
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -49,7 +50,8 @@
                                 </ul>
                             </li>
                             {% if user.is_authenticated %}
-                            <li class="nav-item"><a class="nav-link" href="{% url 'AppOlivarFaq' %}">Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'AppLoginEditarUsuario' %}">Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'AppLoginAvatar' %}">Avatar</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'AppLoginLogout' %}">Logout</a></li>
                             {% else %}
                             <li class="nav-item"><a class="nav-link" href="{% url 'AppLoginLogin' %}">Login</a></li>

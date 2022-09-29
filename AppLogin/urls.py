@@ -20,8 +20,10 @@ from AppLogin.views import *
 from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
-    path('login', login_request, name="AppLoginLogin"),
-    path('registro', register, name="AppLoginRegister"),
-    path('registrocustom', register_custom, name="AppLoginRegisterCustom"),
-    path('logout',LogoutView.as_view(template_name="index.html"), name="AppLoginLogout"),
+    path('login/', login_request, name="AppLoginLogin"),
+    path('registro/', register, name="AppLoginRegister"),
+    path('registrocustom/', register_custom, name="AppLoginRegisterCustom"),
+    path('logout/',LogoutView.as_view(template_name="index.html"), name="AppLoginLogout"),
+    path('editar/', editar_usuario, name="AppLoginEditarUsuario"),
+    path('avatar/', upload_avatar, name="AppLoginAvatar"),
 ]

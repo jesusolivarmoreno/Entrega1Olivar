@@ -23,7 +23,7 @@
                                 <!-- To make this form functional, sign up at-->
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
-                                <form action="" method="POST">
+                                <form action="" method="POST" enctype="multipart/form-data">
                                     {% csrf_token %}
                                    
                                     {{ form.as_p }}
