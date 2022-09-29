@@ -3,16 +3,16 @@ Hola muy buenas tardes este proyecto fue realizado por Jesus Olivar  Y Mirleth R
 
 el proyecto consta de lo siguiente : 
 
-Home
-About
-Contact
-Crear > Experiencias , Proyectos , Cursos
-Ver > Experiencias
-Profile
-Avatar
-Logout
-Login
-Register
+Home,
+About,
+Contact,
+Crear, > Experiencias , Proyectos , Cursos
+Ver, > Experiencias
+Profile,
+Avatar,
+Logout,
+Login,
+Register,
 
 -----------------------------------------
 Con respecto al modelo de este proyecto es un modelo Generico el cual puede ser uso cualquier persona por eso no lo editamos para que cualquier persona haga de su uso.
@@ -23,13 +23,12 @@ tenemos 2 vistas  :
 
 1 ) usuarios que no estan registrado en el sitio solo pueden entrar en el siguiente menu : 
 
-Home
-About
-Contact
-Chat
-Ver > Experiencias
-Login
-Register 
+Home,
+About,
+Contact,
+Ver, > Experiencias
+Login,
+Register
 
 en la parte de Login es para entrar al sitio web ( Previamente el usuario debe estar registrado )
 en la parte de Register el usuario puede registrarse.
@@ -40,14 +39,14 @@ Avatar
 Bienvenido "Nombre del Usuario"
 
 
-Home
-About
-Contact
-Crear > Experiencias , Proyectos , Cursos
-Ver > Experiencias
-Profile
-Avatar
-Logout
+Home,
+About,
+Contact,
+Crear, > Experiencias , Proyectos , Cursos
+Ver ,> Experiencias
+Profile,
+Avatar,
+Logout,
 
 con respecto a las vista de Avatar el usuario registrado como primera vez puede subir su  fotografia alli
 Puede crear experiencias y ver las mismas realizar CRUD de las mismas en el menu de Ver experiencias
