@@ -37,8 +37,9 @@
                                           <th>Fecha de Culminacion</th>
 
                                           <th>Descripcion</th>
+                                          
                                           <th>Accion</th>
-                                    
+                                        
                                         </tr>
                                       
                                         <tr>
@@ -47,9 +48,10 @@
                                           <td>{{ exper.fechainicio }}</td>
                                           <td>{{ exper.fechafin }}</td>
                                           <td>{{ exper.descripcion }}</td>
+                                          {% if user.is_authenticated %}
                                           <td> <a href="{% url 'AppOlivarEliminarExperiencia' exper.id %}">Eliminar</a>
                                             <a href="{% url 'AppOlivarEditarExperiencia' exper.id %}"> Editar </a>
-                                        
+                                            {% endif %}
                                         </td>
                                           {% endfor %}
                                         </tr>
