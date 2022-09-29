@@ -52,3 +52,8 @@ con respecto a las vista de Avatar el usuario registrado como primera vez puede 
 Puede crear experiencias y ver las mismas realizar CRUD de las mismas en el menu de Ver experiencias
 
 el usuario que no este authenticado no puede CUD solo puede hacer R.
+
+cuando el usuario se encuentra Logeado : 
+
+Puede editar su perfil en el menu de Profile y su Avatar.
+
