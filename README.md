@@ -56,3 +56,5 @@ el usuario que no este authenticado no puede CUD solo puede hacer R.
 cuando el usuario se encuentra Logeado : 
 
 Puede editar su perfil en el menu de Profile y su Avatar.
+
+https://basf-my.sharepoint.com/:v:/g/personal/olivarj5_basfad_basf_net/EWEufZNKqOBCpCsLcr_3AJEBbMQo67kW6jECYIAAoAjP3Q?email=jesus.olivar%40basf.com
