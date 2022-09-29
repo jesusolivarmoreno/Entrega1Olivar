@@ -4,6 +4,7 @@ from urllib import request
 from django.shortcuts import render, redirect
 from AppOlivar.models import Proyectos, Experiencia , Cursos
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
 from AppOlivar.forms import *
@@ -68,14 +69,18 @@ def Contact(request):
 def Pricing(request):
     return render(request, "AppOlivar/pricing.html")
 
+#ESTA ES LA VISTA DE PROFILE
+@login_required
 def Faq(request):
     return render(request, "AppOlivar/faq.html")
+#ES LA QUE TENGO QUE EDITAR PARA PERFIL
 
 # FIN vista HTML
 
 # Vista para Formularios
 
 # Comienzo Formulario Proyectos
+@login_required
 def formulario_proyecto(request):
     if request.method == 'POST':
         formulario_proyecto = CrearProyecto(request.POST)
@@ -93,7 +98,7 @@ def formulario_proyecto(request):
 #Fin Formulario Proyectos
 
 #Comienzo Formulario Experiencia
-
+@login_required
 def formulario_experiencia(request):
     if request.method == 'POST':
         formulario_experiencia = CrearExperiencia(request.POST)
@@ -114,7 +119,7 @@ def formulario_experiencia(request):
 #Fin Formulario Experiencia
 
 #Comienzo Formulario Cursos
-
+@login_required
 def formulario_cursos(request):
     if request.method == 'POST':
         formulario_cursos = CrearCursos(request.POST)
