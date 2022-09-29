@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.urls import path
 from AppOlivar import views
-from AppOlivar.views import Busquedaexperiencia_get, Inicio, About , Contact , Pricing , Faq , PortFolioItem , formulario_proyecto , formulario_experiencia , formulario_cursos
+from AppOlivar.views import Editarexperiencia, Busquedaexperiencia_get, Inicio, About , Contact , Pricing , Faq , PortFolioItem , formulario_proyecto , formulario_experiencia , formulario_cursos , Eliminarexperiencia
 urlpatterns = [
     path('', Inicio, name="AppInicio"),
     path('about', About, name="AppOlivarAbout"),
@@ -30,4 +30,6 @@ urlpatterns = [
     path('portfolioitem', PortFolioItem, name="AppOlivarPortFolioItem"),
     #path('busquedaexperiencia', Busquedaexperiencia, name="AppOlivarBusquedaExperiencia"),
     path('busquedaexperiencia_get', Busquedaexperiencia_get, name="AppOlivarBusquedaExperienciaget"),
+    path('eliminar_experiencia/<int:id>', Eliminarexperiencia, name="AppOlivarEliminarExperiencia"),
+    path('editar_experiencia/<int:id>', Editarexperiencia, name="AppOlivarEditarExperiencia"),
 ]

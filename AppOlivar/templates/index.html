@@ -48,6 +48,11 @@
                     </div>
                 </div>
             </nav>
+            {% for message in messages %}
+            
+            <p>{{message}}</p>
+
+            {% endfor %}
             {%block contenido%}
             <!-- Header-->
             <header class="bg-dark py-5">
