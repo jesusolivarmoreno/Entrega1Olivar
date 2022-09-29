@@ -1,11 +1,58 @@
 # Entrega1Olivar
-Este proyecto es realizado por Jesus Olivar
-en el cual tenemos las ultimas pestañas que se llaman crear y Ver
+Hola muy buenas tardes este proyecto fue realizado por Jesus Olivar  Y Mirleth Rodriguez
 
-en crear tenemos :
-Crear proyectos
-Crear Experiencia
-Crear Crusos
+el proyecto consta de lo siguiente : 
 
-en Ver tenemos :
-Ver Experiencias
+Home,
+About,
+Contact,
+Crear, > Experiencias , Proyectos , Cursos
+Ver, > Experiencias
+Profile,
+Avatar,
+Logout,
+Login,
+Register,
+
+-----------------------------------------
+Con respecto al modelo de este proyecto es un modelo Generico el cual puede ser uso cualquier persona por eso no lo editamos para que cualquier persona haga de su uso.
+
+con respecto a las vistas para los usuarios : 
+
+tenemos 2 vistas  : 
+
+1 ) usuarios que no estan registrado en el sitio solo pueden entrar en el siguiente menu : 
+
+Home,
+About,
+Contact,
+Ver, > Experiencias
+Login,
+Register
+
+en la parte de Login es para entrar al sitio web ( Previamente el usuario debe estar registrado )
+en la parte de Register el usuario puede registrarse.
+
+Luego que el usuario se encuentra dentro del sitio web tiene la siguiente vista : 
+
+Avatar 
+Bienvenido "Nombre del Usuario"
+
+
+Home,
+About,
+Contact,
+Crear, > Experiencias , Proyectos , Cursos
+Ver ,> Experiencias
+Profile,
+Avatar,
+Logout,
+
+con respecto a las vista de Avatar el usuario registrado como primera vez puede subir su  fotografia alli
+Puede crear experiencias y ver las mismas realizar CRUD de las mismas en el menu de Ver experiencias
+
+el usuario que no este authenticado no puede CUD solo puede hacer R.
+
+cuando el usuario se encuentra Logeado : 
+
+Puede editar su perfil en el menu de Profile y su Avatar.
